@@ -166,11 +166,10 @@ public class NavigationBarView extends LinearLayout {
     }
 
     public void setMenuVisibility(final boolean show, final boolean force) {
-        if (!force && mShowMenu == show) return;
+        if (!force);
+    getMenuButton().setVisibility(View.VISIBLE);
+       return;
 
-        mShowMenu = show;
-
-        getMenuButton().setVisibility(mShowMenu ? View.VISIBLE : View.INVISIBLE);
     }
 
     public void setLowProfile(final boolean lightsOut) {
