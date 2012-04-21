@@ -197,7 +197,7 @@ public class AudioService extends IAudioService.Stub {
         AudioSystem.STREAM_RING,  // STREAM_RING
         AudioSystem.STREAM_MUSIC, // STREAM_MUSIC
         AudioSystem.STREAM_ALARM,  // STREAM_ALARM
-        AudioSystem.STREAM_NOTIFICATION,   // STREAM_NOTIFICATION
+        AudioSystem.STREAM_RING,   // STREAM_NOTIFICATION
         AudioSystem.STREAM_BLUETOOTH_SCO, // STREAM_BLUETOOTH_SCO
         AudioSystem.STREAM_SYSTEM,  // STREAM_SYSTEM_ENFORCED
         AudioSystem.STREAM_VOICE_CALL, // STREAM_DTMF
