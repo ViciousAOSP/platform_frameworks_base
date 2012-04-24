@@ -231,24 +231,18 @@ class LockScreen extends LinearLayout implements KeyguardScreen {
                 mmsIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(mmsIntent);
                 mCallback.goToUnlockScreen();
-            } else if (target == 2) { // left Action = Phone
+            } else if (target == 2) {
+                    toggleRingMode();
+                    mUnlockWidgetMethods.updateResources();
+                    mCallback.pokeWakelock();
+            } else if (target == 3) { // left Action = Phone
                 Intent phoneIntent = new Intent(Intent.ACTION_MAIN);
                 phoneIntent.setClassName("com.android.contacts",
                         "com.android.contacts.activities.DialtactsActivity");
                 phoneIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(phoneIntent);
                 mCallback.goToUnlockScreen();
-            } else if (target == 3) {
-                if (!mCameraDisabled) {
-                    // Start the Camera
-                    Intent intent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    mContext.startActivity(intent);
-                    mCallback.goToUnlockScreen();
-                } else {
-                    toggleRingMode();
-                    mUnlockWidgetMethods.updateResources();
-                    mCallback.pokeWakelock();
+
                 }
             }
         }
