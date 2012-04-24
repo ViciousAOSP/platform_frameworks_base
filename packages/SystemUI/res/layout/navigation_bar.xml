@@ -88,7 +88,7 @@
                 android:contentDescription="@string/accessibility_recent"
                 />
             <com.android.systemui.statusbar.policy.KeyButtonView android:id="@+id/menu"
-                android:layout_width="40dp"
+                android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_sysbar_menu"
                 systemui:keyCode="82"
