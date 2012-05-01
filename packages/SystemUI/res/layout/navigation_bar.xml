@@ -171,7 +171,7 @@
             
             <!-- navigation controls -->
             <com.android.systemui.statusbar.policy.KeyButtonView android:id="@+id/menu"
-                android:layout_height="40dp"
+                android:layout_height="80dp"
                 android:layout_width="match_parent"
                 android:src="@drawable/ic_sysbar_menu_land"
                 systemui:keyCode="82"
