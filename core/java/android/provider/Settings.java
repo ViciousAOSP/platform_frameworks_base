@@ -1784,12 +1784,6 @@ public final class Settings {
          */
         public static final String POWER_SOUNDS_ENABLED = "power_sounds_enabled";
 
-       /**
-        * Enables long press home button, hides recent & shows search button
-        * @hide
-        */	
-        public static final String LONG_PRESS_HOME = "long_press_home";
-
         /**
          * Whether to play a sound for dock events.
          * @hide

@@ -408,24 +408,6 @@ public class PhoneStatusBar extends StatusBar {
         return sb;
     }
 
-   protected class SettingsObserver extends ContentObserver {
-        public SettingsObserver(Handler handler) {
-            super(handler);
-        }
-
-        public void observe() {
-            ContentResolver resolver = mContext.getContentResolver();
-            resolver.registerContentObserver(Settings.System.getUriFor(Settings.System.LONG_PRESS_HOME), false, this);
-	    onChange(true);
-        }
-
-        @Override
-        public void onChange(boolean selfChange) {
-            prepareNavigationBarView();
-        }
-    }
-  
-
     protected WindowManager.LayoutParams getRecentsLayoutParams(LayoutParams layoutParams) {
         boolean opaque = false;
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
