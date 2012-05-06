@@ -158,7 +158,7 @@ public class NavigationBarView extends LinearLayout {
 
         getBackButton()   .setVisibility(disableBack       ? View.INVISIBLE : View.VISIBLE);
         getHomeButton()   .setVisibility(disableHome       ? View.INVISIBLE : View.VISIBLE);
-        getRecentsButton().setVisibility(disableRecent     ? View.INVISIBLE : View.VISIBLE);
+        getRecentsButton().setVisibility(View.GONE);
     }
 
     public void setMenuVisibility(final boolean show) {
