@@ -541,7 +541,7 @@
         android:protectionLevel="dangerous"
         android:label="@string/permlab_camera"
         android:description="@string/permdesc_camera" />
-
+>
     <!-- Allows access to the vibrator -->
     <permission android:name="android.permission.VIBRATE"
         android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
