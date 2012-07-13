@@ -100,8 +100,6 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
 
     private IWindowManager mIWindowManager;
 
-private static int rebootIndex = 0;
-
     /**
      * @param context everything needs a context :(
      */
@@ -242,6 +240,7 @@ private static int rebootIndex = 0;
             new SinglePressAction(com.android.internal.R.drawable.ic_lock_reboot, R.string.global_action_reboot) {
                 public void onPress() {
               mWindowManagerFuncs.reboot();
+               return true;
                 }
 
                 public boolean showDuringKeyguard() {

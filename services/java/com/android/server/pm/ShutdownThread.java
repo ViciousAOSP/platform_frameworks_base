@@ -126,7 +126,7 @@ public final class ShutdownThread extends Thread {
         if (confirm) {
               // Set different dialog message based on whether or not we're rebooting
             if (mReboot) {
-                dialog = new AlertDialog.Builder(context)
+            final AlertDialog dialog = new AlertDialog.Builder(context)
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .setTitle(com.android.internal.R.string.reboot_system)
                         .setSingleChoiceItems(com.android.internal.R.array.shutdown_reboot_options, 0, new DialogInterface.OnClickListener() {
